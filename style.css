@@ -1,0 +1,164 @@
+body,
+html {
+	overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+	color: #1c1b1b;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+	font-size: 17px;
+	line-height: 1.59;
+}
+
+a { 
+	text-decoration: none;
+	color: #fff;  
+}
+
+/* a:hover,
+a:focus {
+	outline: none;
+	text-decoration: none;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {  
+	font-size: 32px; 
+	line-height: 1.13; 
+}
+
+h3 {  
+	font-size: 26px;  
+}
+
+h4 {  
+	font-size: 22px;  
+}
+
+h5 {  
+	font-size: 20px;  
+}
+
+h6 {  
+	font-size: 18px;  
+}
+
+
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #344041;
+    height: 70px;
+    padding-top: 10px;
+}
+.logo {
+    font-size: 40px;
+    color: #fff;
+}
+
+.nav-items ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+}
+.nav-items > a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: red;
+    height: 4px;
+    width: 0;
+    transition: 1s;
+}
+.nav-items > a:hover::after {
+    width: 100%;
+}
+.button {
+    display: none;
+}
+
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #697e16;
+}
+
+#Home .container {
+    height: 400px;
+    width: 75vw;
+    background-color: #697e16;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+}
+.home-intro {
+    height: 70px;
+    padding: 10px;
+}
+.home-intro h1{
+    font-size: 60px;
+}
+
+.typewriter {
+    font-size: 40px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.my-work-btn {
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-work-btn:hover {
+    background-color: #fff;
+    color: #697e16;
+}
