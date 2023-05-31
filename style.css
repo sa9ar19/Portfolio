@@ -72,14 +72,17 @@ h6 {
 	font-size: 18px;  
 }
 
-.container-fluid{
+nav{
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #344041;
+    background-color: #3d8086;
     height: 70px;
+    width: 100vw;
     padding-top: 10px;
+    z-index: 10;
 }
 .logo {
     font-size: 40px;
@@ -111,6 +114,7 @@ li:hover::after {
 
 
 #Home {
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,17 +132,17 @@ li:hover::after {
     color: #fff;
     align-items: center;
 }
-.home-intro {
+.home-intro{
     height: 70px;
     padding: 10px;
-    font-family: 'Aoboshi One', serif;
 }
 .home-intro h1{
-    font-size: 60px;
+    font-size: 70px;
+    font-family: 'Aoboshi One', serif;
 }
 
 .typewriter {
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .description {
@@ -165,6 +169,10 @@ li:hover::after {
     color: #344041;
 }
 
+
+
+/* About Me section */
+
 #about-me {
     height: 700px;
     text-align: center;
@@ -186,11 +194,12 @@ hr{
 .about-me-info {
     width: 1000px;
     margin: auto;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 40px;
 }
 
 span {
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Aoboshi One', serif;
     font-weight: 600;
 }
@@ -200,28 +209,182 @@ span {
     width: 90vw;
     margin: 20px auto;
     background-color: #D8D8D8;
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
+
+.profile {
+    height: 400px;
+    width: 380px;
+    border-radius: 50%;    
+    position: relative;
+    left: 100px;
+    top: 20px;
+    box-shadow: 5px 5px 10px 5px #1c1b1b;
+}
+
+.profile img {
+    height: 400px;
+    width: 380px;
+    border-radius: 50%;
+}
+
+.about-me-content {
+    height: 430px;
+    width: 520px;
+    /* background-color: red; */
+    position: absolute;
+    right: 100px;
+    top: 10px; 
+}
+
+.skills {
+    text-align: left;
+    padding-left: 30px;
+}
+.skills h2 {
+    text-align: center;
+    font-family: 'Aoboshi One', serif;
+    font-size: 40px;
+    margin: 0;
+}
+.skills h3 {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+}
+.skill-bar-container {
+    height: 25px;
+    width: 450px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    margin-left: 20px;
+    box-shadow: 5px 5px 5px#000;
+}
+.skill-bar {
+    height: 25px;
+    width: 400px;
+    background-color: #3d8086;
+    color: #fff;
+
+}
+
 
 /* Portfolio section */
 #my-portfolio {
-    height: 1000px;
-    background-color: aquamarine;
+    height: 650px;
+    text-align: center;
+}
+.owl-theme h4{
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #ffffff;
+}
+
+.item {
+    margin: auto;
+    height: 400px;
+    width: 310px;
+    background-color: #3d8086;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.work-image {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+.work-image img {
+    object-fit: fill;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+}
+.image-hover-text {
+    height: 50px;
+    width: 150px;
+    background-color: #344041;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.work-image:hover .image{
+    opacity: 0.3;
+}
+.work-image:hover .image-hover-text {
+    opacity: 1;
+}
+
+
+/* Contact Me Section  */
+#contact {
     text-align: center;
 }
 
-.work-container {
+.my-contact {
     display: flex;
+    width: 1200px;
     flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
     gap: 30px;
-    margin: 20px auto;
-    border: 3px solid green;
-    background-color: yellow;
-    height: 800px;
-    width: 85vw;
+}
+.my-contact h3 {
+    display: inline;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.works {
-    border: 1px solid red;
-    height: 350px;
-    width: 350px;
+.form form{
+    height: 300px;
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+textarea {
+    width: 100%;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.form-right button {
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
+    background-color: #3d8086;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 30px;
 }
