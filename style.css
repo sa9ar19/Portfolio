@@ -53,6 +53,7 @@ h1 {
 h2 {  
 	font-size: 32px; 
 	line-height: 1.13; 
+    padding-top: 30px;
 }
 
 h3 {  
@@ -71,7 +72,6 @@ h6 {
 	font-size: 18px;  
 }
 
-
 .container-fluid{
     display: flex;
     flex-direction: row;
@@ -84,6 +84,7 @@ h6 {
 .logo {
     font-size: 40px;
     color: #fff;
+    font-family: 'Aoboshi One', serif;
 }
 
 .nav-items ul{
@@ -92,17 +93,17 @@ h6 {
     justify-content: space-around;
     gap: 70px;
 }
-.nav-items > a::after {
+li::after {
     content: "";
-    position: absolute;
     display: block;
-    background-color: red;
-    height: 4px;
+    position: relative;
+    background-color: #fff;
+    height: 2px;
     width: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
-.nav-items > a:hover::after {
-    width: 100%;
+li:hover::after {
+    width: 120%;
 }
 .button {
     display: none;
@@ -115,13 +116,13 @@ h6 {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #697e16;
+    background-color: #344041;
 }
 
 #Home .container {
     height: 400px;
     width: 75vw;
-    background-color: #697e16;
+    background-color: #344041;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -130,6 +131,7 @@ h6 {
 .home-intro {
     height: 70px;
     padding: 10px;
+    font-family: 'Aoboshi One', serif;
 }
 .home-intro h1{
     font-size: 60px;
@@ -160,5 +162,66 @@ h6 {
 }
 .my-work-btn:hover {
     background-color: #fff;
-    color: #697e16;
+    color: #344041;
+}
+
+#about-me {
+    height: 700px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+#about-me h2 {
+    padding-top: 30px;
+}
+
+hr{
+    border: 2px solid #344041;
+    width: 200px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.about-me-info {
+    width: 1000px;
+    margin: auto;
+    font-size: 20px;
+}
+
+span {
+    font-size: 25px;
+    font-family: 'Aoboshi One', serif;
+    font-weight: 600;
+}
+
+.about-me-container {
+    height: 450px;
+    width: 90vw;
+    margin: 20px auto;
+    background-color: #D8D8D8;
+}
+
+/* Portfolio section */
+#my-portfolio {
+    height: 1000px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 20px auto;
+    border: 3px solid green;
+    background-color: yellow;
+    height: 800px;
+    width: 85vw;
+}
+
+.works {
+    border: 1px solid red;
+    height: 350px;
+    width: 350px;
 }
