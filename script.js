@@ -6,6 +6,16 @@ var typed = new Typed('#element', {
     loop: true
     });
 
+// Animate Skills bar
+const aboutme = document.getElementById("about-me")
+
+aboutme.addEventListener("scroll",()=>{
+    const htmlBar = document.getElementById("html")
+    htmlBar.style.width = "90px"
+})
+
+
+
 // Owl Carousel
     var owl = $('.owl-carousel');
     owl.owlCarousel({
@@ -22,6 +32,7 @@ var typed = new Typed('#element', {
     $('.stop').on('click',function(){
         owl.trigger('stop.owl.autoplay')
     })
+
 
 
 

@@ -21,6 +21,8 @@
     <!-- Css File Link  -->
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+
   </head>
 
   <body>
@@ -33,7 +35,7 @@
 
       <div class="nav-items">
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#my-portfolio">Work</a></li>
@@ -90,23 +92,23 @@
           <img src="Images/profile.jpg" alt="" />
         </div>
 
-        <div class="about-me-content">
+        <div class="about-me-content" id="skills">
             <div class="skills"><h2>Skills</h2></div>
             <div class="skills"><h3>Html</h3></div>
-            <div class="skill-bar-container">
-                <div class="skill-bar">90%</div>
+            <div class="skill-bar-container" >
+                <div class="skill-bar" id="html">90%</div>
             </div>
             <div class="skills"><h3>CSS</h3></div>
             <div class="skill-bar-container">
-                <div class="skill-bar">80%</div>
+                <div class="skill-bar" id="css">80%</div>
             </div>
             <div class="skills"><h3>JavaScript</h3></div>
             <div class="skill-bar-container">
-                <div class="skill-bar">75%</div>
+                <div class="skill-bar" id="js">75%</div>
             </div>
             <div class="skills"><h3>React</h3></div>
             <div class="skill-bar-container">
-                <div class="skill-bar">10%</div>
+                <div class="skill-bar" id="react">40%</div>
             </div>
         </div>
       </div>
@@ -182,60 +184,50 @@
 
 
     <!-- Contace Me Section  -->
-    <section id="contact">
-        <h2>&lt; Contact Me /></h2>
-        <hr>
+<section id="contact">
+<h2>Contact Me</h2>
+<hr>
 
-            <div class="my-contact">
-                <div class="contact-left">
-                    <h3 class="contacts">
-                        <i class="fa-sharp fa-solid fa-envelope"></i> <br>
-                        Khadkasagar2058@gmail.com
-                    </h3>
-                </div>
-               <div class="contact-mid">
-                    <h3 class="contacts">
-                        <i class="fa-sharp fa-solid fa-phone"></i> <br>
-                        +977-9819189323
-                    </h3>
-               </div>
-                <div class="contact-right">
-                    <h3 class="contacts"> 
-                        <i class="fa-sharp fa-solid fa-location-dot"></i> <br>
-                        Pokhara Lekthnath - 29, <br> Talchowk
-                   </h3>
-                </div>            
-            </div>
+    <h3 class="contacts">
+      <i class="fa-sharp fa-solid fa-envelope">
+      </i> 
+      <a href="mailto: khadkasagar2058@gmail.com">Khadkasagar2058@gmail.com</a> 
+  </h3>
+  <br>
+  <h3 class="contacts">
+      <i class="fa-sharp fa-solid fa-phone">
+      </i> 
+      +977-9819189323
+  </h3>
+  <br>
+  <h3 class="contacts"> 
+      <i class="fa-sharp fa-solid fa-location-dot">   
+      </i>
+       Pokhara Lekthnath - 29, Talchowk
+  </h3>
+  <br>
+  <div class="icons">
+      <a href="https://www.facebook.com/khadka.sagar01">
+          <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/sa9ar_19/">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/sa9ar19">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://github.com/sa9ar19">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sagar-khadka-400a8226a/">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+  </div>
+</section>
 
-        <div class="form">
-            <form action="">
-                <div class="form-left form-box">
-                    <input type="text" name="name" placeholder="Your Name"> <br>
-                    <input type="email" name="email" placeholder="Your Email">     
-                </div>
-                <div class="form-mid form-box">
-                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Message"></textarea>
-                </div>
-                <div class="form-right form-box">
-                    <button type="submit">Submit</button>
-                </div>
-                
-            </form>
-        </div>
-
-        <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <h4 class="copyright">&copy Developed By Sagar Khadka</h4>
-    </div>
-
-
-    </section>
-
+<footer>
+  <h4 class="copyright">&copy Developed By Sagar Khadka</h4>
+</footer>
 
     <!-- Typed JS Script src  -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
