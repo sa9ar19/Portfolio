@@ -95,6 +95,7 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     gap: 70px;
+    transition: 0.3s;
 }
 li::after {
     content: "";
@@ -110,6 +111,13 @@ li:hover::after {
 }
 .button {
     display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.close-button {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 
@@ -174,7 +182,6 @@ li:hover::after {
 /* About Me section */
 
 #about-me {
-
     padding-top: 70px;
     height: 700px;
     text-align: center;
@@ -423,4 +430,59 @@ footer {
 
 footer h4 {
     font-size: 14px;
+}
+
+
+@media screen and (max-width: 600px ){
+    
+    .nav-items ul{
+        display: flex;
+        flex-direction: column;
+        background-color: #413b3b;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: -1000px;
+        text-align: center;
+        width: 300px;
+        padding-bottom: 30px;
+        gap: 40px;
+    }
+    .button {
+        display: inline;
+        transition: 1s;
+    }
+    .close-button {
+        z-index: 10;
+        padding-top: 10px;
+        margin: 0;
+    }
+    
+    .home-intro h1{
+        font-size: 40px;
+    }
+    #about-me {
+        height: 200vh;
+    }
+    .about-me-info {
+        width: 350px;
+    }
+    .about-me-container{
+        flex-direction: column;
+    }
+    .profile{
+        left: 52px;
+    }
+    .about-me-content{
+        top: 500px;
+        left: 0;
+    }
+    #my-portfolio {
+        background: #d8d8d8;
+    }
+    .owl-theme {
+        gap: 20px;
+    }
+
+
 }

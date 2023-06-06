@@ -34,6 +34,35 @@ aboutme.addEventListener("scroll",()=>{
     })
 
 
+ 
+var openMenu = document.getElementById("bar-button");
+
+var closeMenu = document.getElementById("cross-button");
+
+var navList = document.getElementById("nav-list")
+
+openMenu.addEventListener("click", () => {
+    navList.style.right = 0;
+
+    closeMenu.style.display = "inline";
+
+    openMenu.style.display = "none";
+})
+
+closeMenu.addEventListener("click", () => {
+    navList.style.right = "-1000px";
+
+    closeMenu.style.display = "none";
+
+    openMenu.style.display = "inline";
+})
+
+
+
+
+
+
+
 
 
 
